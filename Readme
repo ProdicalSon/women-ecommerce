@@ -1,0 +1,37 @@
+// Project fille structure
+
+/women-ecommerce
+│
+├── /css
+│   └── styles.css (for styling)
+│
+├── /images (store product images)
+│
+├── /includes
+│   ├── header.php (common header)
+│   ├── footer.php (common footer)
+│   ├── db.php (database connection)
+│   └── functions.php (helper functions)
+│
+├── /admin
+│   ├── dashboard.php (admin dashboard)
+│   ├── manage_products.php (CRUD for products)
+│   └── manage_orders.php (view and update orders)
+│
+├── /user
+│   ├── login.php
+│   ├── register.php
+│   ├── profile.php
+│   └── orders.php (view order history)
+│
+├── /products
+│   ├── index.php (list all products)
+│   ├── product.php (single product page)
+│   └── search.php (search functionality)
+│
+├── /cart
+│   ├── index.php (view cart)
+│   └── checkout.php (checkout process)
+│
+├── index.php (homepage)
+└── config.php (store configuration settings)

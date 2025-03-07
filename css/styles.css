@@ -1,0 +1,263 @@
+/* GENERAL RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdffff;
+    overflow-x: hidden;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(14deg, rgba(16, 16, 17, 1) 44%, rgba(221, 30, 30, 0.832) 81%);
+    box-shadow: 0 2px 4px 0 rgba(236, 216, 216, 0.5);
+}
+
+nav .logo a img {
+    height: 60px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+nav input {
+    height: 30px;
+    width: 200px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    text-align: center;
+}
+
+#search-icon {
+    margin-left: -27px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#cart {
+    position: relative;
+}
+
+#cart::after {
+    content: '3';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 10px;
+    padding: 4px 8px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+}
+
+/* DROPDOWN CATEGORIES */
+nav .category-main {
+    position: relative;
+}
+
+nav .category-main .categories {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .category-main:hover .categories {
+    display: flex;
+}
+
+nav .category-main .categories li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav .category-main .categories li a {
+    color: black;
+}
+
+/* HERO SECTION */
+.home-main {
+    height: 720px;
+    width: 100%;
+    background: url('images/fashionhero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 45px;
+}
+
+.logo-hero {
+    width: 30%;
+    height: 400px;
+}
+
+.logo-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-main p {
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    word-spacing: 7px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+/* PRODUCT SECTIONS */
+section {
+    padding: 30px 0;
+    background: #EAEAEA;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.caption-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#title-caption {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.clothes-example {
+    width: 20%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.clothes-example:hover {
+    transform: scale(1.1);
+}
+
+.clothes-example p {
+    position: absolute;
+    bottom: -50px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#clothes-price {
+    bottom: -73px;
+}
+
+.clothes-example i {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.clothes-example-seemore {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(37, 33, 33);
+    color: #EAEAEA;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.clothes-example-seemore:hover {
+    background-color: black;
+    color: white;
+}
+
+/* INDIVIDUAL CARDS */
+#card2 {
+    background-image: url('images/dress-e2.png');
+}
+
+#card3 {
+    background-image: url('images/dress-e3.png');
+}
+
+#card4 {
+    background-image: url('images/dress-e4.png');
+}
+
+#card4::after {
+    content: '50% OFF';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#card5 {
+    background-image: url('images/top-e1.png');
+}
+
+#card6 {
+    background-image: url('images/top-e2.png');
+}
+
+#card7 {
+    background-image: url('images/top-e3.png');
+}
+
+#card8 {
+    background-image: url('images/top-e4.png');
+}
